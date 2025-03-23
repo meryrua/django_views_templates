@@ -8,6 +8,12 @@ urlpatterns = [
     path(route='', view=views.popular_course_list, name='popular_course_list'),
     path('course/<int:course_id>/enroll/', views.enroll, name='enroll'),
     path('course/<int:course_id>/', views.course_details, name='course_details'),
+    # Authentication related urls
+    '''path('login/', views.login_request, name='login'),
+    path('logout/', views.logout_request, name='logout'),
+    path('registration/', views.registration_request, name='registration'),'''
+
+    
     # Another lab for Django classes
     '''
     path(route='', view=views.CourseListView.as_view(), name='popular_course_list'),
